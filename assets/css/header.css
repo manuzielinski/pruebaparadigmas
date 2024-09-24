@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #EDEDED;
+}
+
+.header {
+    background-color: #292828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 10px 2%;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 140px; 
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.header .nav-links li {
+    padding: 0 20px;
+}
+
+.header .nav-links a {
+    font-weight: 700;
+    color: #d6d5d5;
+    text-decoration: none;
+}
+
+.header .search-icon {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.header .search-icon input[type="search"] {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 17px;
+    background-color: #fff;
+    outline: none;
+}
+
+.header .login-link {
+    font-weight: 700;
+    color: #d6d5d5;
+    text-decoration: none;
+    margin-left: 1px;
+}
+
+.header .image-button img {
+    height: 40px; 
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 15px 5%;
+    }
+
+    .header .nav-links {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .header .nav-links li {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .search-icon {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .header .search-icon input[type="search"] {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header .login-link, .header .image-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .header .image-button img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo img {
+        height: 50px; 
+    }
+
+    .header .nav-links li {
+        padding: 8px 0;
+    }
+
+    .header .search-icon input[type="search"] {
+        padding: 8px;
+    }
+}
